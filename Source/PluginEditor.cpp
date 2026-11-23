@@ -665,7 +665,12 @@ void InsideOutEditor::Content::paint (juce::Graphics& g)
     // title
     g.setColour (theme::petrol);
     g.setFont (theme::titleFont (46.0f));
-    g.drawText ("InsideOut", juce::Rectangle<float> (40.0f, 14.0f, 320.0f, 54.0f), juce::Justification::centredLeft, false);
+    g.drawText ("InsideOut", juce::Rectangle<float> (40.0f, 6.0f, 320.0f, 52.0f), juce::Justification::centredLeft, false);
+
+    // tagline
+    g.setColour (theme::muted);
+    g.setFont (theme::sansMedium (13.0f));
+    g.drawText ("makes room for your vocals", juce::Rectangle<float> (42.0f, 52.0f, 320.0f, 18.0f), juce::Justification::centredLeft, false);
 
     // legend row
     const float ly = 78.0f, lh = 18.0f, cy = ly + lh * 0.5f;
